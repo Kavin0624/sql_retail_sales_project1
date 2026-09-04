@@ -168,8 +168,9 @@ FROM retail_sales
 GROUP BY customer_id
 HAVING COUNT(DISTINCT category) > 1
 ORDER BY category_count DESC;
+```
 
--- Q.11 Find the top 10 transactions by revenue
+11. **Find the top 10 transactions by revenue**:
 ```sql
 SELECT
     transactions_id,
